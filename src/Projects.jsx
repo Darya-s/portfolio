@@ -5,7 +5,7 @@ import mock3 from './assets/images/mockProject3.png';
 const Projects = () => {
   return (
     <>
-      <div className='grid text-text justify-center items-center mx-auto  '>
+      <div className='grid text-text justify-center items-center mx-auto pt-10 '>
         <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>
           <h2 className='text-4xl font-bold text-main px-8 pb-2.5 '>
             My projects
@@ -13,8 +13,8 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className='bg-text shadow-top-right text-main flex justify-center items-center h-screen'>
-        <div className=' grid grid-cols-1 sm:grid-cols-3 gap-10 mt-10 mx-6'>
+      <div className='bg-text shadow-top-right text-main flex justify-center items-center -mt-1'>
+        <div className=' grid grid-cols-1 sm:grid-cols-3 gap-10 mt-20 mx-6'>
           <img
             alt='project1'
             src={mock}
