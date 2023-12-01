@@ -1,56 +1,32 @@
-import profile from './assets/images/profile.png';
-import profile1 from './assets/images/profile1.png';
-import Contact from './Contact';
-import Projects from './Projects';
-import Skills from './Skills';
-
-import { useEffect, useState } from 'react';
-
 const Home = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <>
-      <div
-        id='home'
-        className='h-screen max-h-[50vh] bg-gradient-to-r from-main via-secondary to-third sm:flex justify-evenly  xs:grid justify-center items-center text-center mt-4'>
-        <div
-          className={`text-text mx-auto w-[50%] py-4 sm:text-left transition-transform ease-in-out duration-1000 transform ${
-            isVisible ? 'translate-x-0' : '-translate-x-full'
-          }`}>
-          <h1 className='font-bold text-base sm:text-6xl'>Hi, I am Darya</h1>
-          <p className='text-base py-3 sm:text-xl'>
-            I am ambitious junior full-stack developer with expertise in React,
-            Node JS and TypeScript. I am actively seeking an internship or a
-            position to further enhance my skills and make a meaningful
-            contribution to a dynamic team.
-          </p>
+    <div className='absolute top-[92%] left-0 w-full h-24 bg-blue-500 rounded-lg shadow-md z-10'>
+      <div className='  grid text-text justify-center items-center mx-auto '>
+        <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>
+          <h2 className='text-4xl font-bold text-main px-8'>My certificates</h2>
         </div>
-
-        <img
-          className={` rounded-full max-w-[20%] mx-auto transition-transform ease-in-out duration-1000 transform ${
-            isVisible ? 'translate-x-0' : 'translate-x-full'
-          }`}
-          src={profile}
-          alt='Profile'
-        />
-      </div>
-      <div id='projects'>
-        <Projects />
       </div>
 
-      <div id='skills'>
-        <Skills />
+      <div className='bg-text shadow-top-right text-main flex justify-center items-center -mt-1'>
+        <div className=' grid grid-cols-1 sm:grid-cols-3 gap-10 mt-20 mx-6'>
+          <img
+            alt='project1'
+            src=''
+            className='rounded-2xl w-96 h-52 transition-transform transform hover:scale-150 hover:z-10'
+          />
+          <img
+            alt='project2'
+            src=''
+            className='rounded-2xl w-96 h-52 transition-transform transform hover:scale-150 hover:z-10'
+          />
+          <img
+            alt='project3'
+            src=''
+            className='rounded-2xl w-96 h-52 transition-transform transform hover:scale-150 hover:z-10'
+          />
+        </div>
       </div>
-
-      <div id='contact'>
-        <Contact />
-      </div>
-    </>
+    </div>
   );
 };
 

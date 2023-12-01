@@ -18,6 +18,7 @@ module.exports = {
       fourth: '#F05941',
       text: '#FFF6F6',
       hover: '#F7EFE5',
+      black: '#000000',
     },
     safelist: ['animate-[drop-in_0.5s]', 'animate-[drop-out_0.5s]'],
   },
