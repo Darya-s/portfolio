@@ -7,13 +7,15 @@ import Projects from './Projects';
 import Contact from './Contact';
 import NoPage from './NoPage';
 import Skills from './Skills';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className='relative'>
       <Router>
         <Navigation />
-
+        <Header />
         <Routes>
           <Route path='/' element={<Home />} index />
           <Route path='projects' element={<Projects />} />
@@ -21,6 +23,7 @@ function App() {
           <Route path='contact' element={<Contact />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
