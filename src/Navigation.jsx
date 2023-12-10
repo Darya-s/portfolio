@@ -1,4 +1,3 @@
-// Navigation.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -21,7 +20,7 @@ const Navigation = () => {
           <ul className='sm:flex sm:justify-center sm:items-center gap-6 text-2xl bg-main'>
             <li>
               <Link
-                to='/'
+                to='/portfolio'
                 className={`transition-transform transform hover:text-fourth ${
                   selectedComponent === 'Home'
                     ? ' bg-text text-main px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
