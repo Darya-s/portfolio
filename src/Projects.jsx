@@ -1,12 +1,11 @@
 import mock from './assets/images/mockProject.png';
 import mock2 from './assets/images/mockProject2.png';
 import mock3 from './assets/images/mockProject3.png';
-import { Link } from 'react-router-dom';
 import RedirectButton from './RedirectButton';
 
 const Projects = () => {
   return (
-    <div className='w-full rounded-lg shadow-md '>
+    <div id='Projects' className='w-full rounded-lg shadow-md '>
       <div className='grid text-text justify-center items-center  bg-gradient-to-r from-main via-secondary to-third'>
         <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>
           <h2 className='text-4xl font-bold text-main px-4'>My projects</h2>

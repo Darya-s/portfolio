@@ -2,13 +2,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import Projects from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
-import NoPage from './NoPage';
 
 const Navigation = () => {
   const [selectedComponent, setSelectedComponent] = useState(null);
+  const handleLinkClick = (componentName) => {
+    setSelectedComponent(componentName);
+
+    const element = document.getElementById(componentName);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -23,7 +27,7 @@ const Navigation = () => {
                     ? ' bg-text text-main px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
-                onClick={() => setSelectedComponent('Home')}>
+                onClick={() => handleLinkClick('Home')}>
                 Home
               </Link>
             </li>
@@ -35,7 +39,7 @@ const Navigation = () => {
                     ? ' bg-text px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
-                onClick={() => setSelectedComponent('Projects')}>
+                onClick={() => handleLinkClick('Projects')}>
                 Projects
               </Link>
             </li>
@@ -47,7 +51,7 @@ const Navigation = () => {
                     ? ' bg-text px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
-                onClick={() => setSelectedComponent('Skills')}>
+                onClick={() => handleLinkClick('Skills')}>
                 Skills
               </Link>
             </li>
@@ -59,7 +63,7 @@ const Navigation = () => {
                     ? ' bg-text px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
-                onClick={() => setSelectedComponent('Contact')}>
+                onClick={() => handleLinkClick('Contact')}>
                 Contact Me
               </Link>
             </li>

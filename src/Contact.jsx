@@ -3,7 +3,7 @@ import email from './assets/images/gmail-logo.png';
 import viber from './assets/images/viber.png';
 const Home = () => {
   return (
-    <div className='w-full rounded-lg shadow-md '>
+    <div id='Contact' className='w-full rounded-lg shadow-md '>
       <div className='grid text-text justify-center items-center  bg-gradient-to-r from-main via-secondary to-third'>
         <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>
           <h2 className='text-4xl font-bold text-main px-4'>Contact me</h2>
