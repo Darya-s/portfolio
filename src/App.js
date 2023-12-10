@@ -17,8 +17,9 @@ function App() {
         <Navigation />
         <Header />
         <Routes>
-          <Route path='/portfolio/' element={<Home />} index />
+          <Route path='/' element={<Home />} index />
           <Route path='/home' element={<Home />} />
+
           <Route path='projects' element={<Projects />} />
           <Route path='skills' element={<Skills />} />
           <Route path='contact' element={<Contact />} />
