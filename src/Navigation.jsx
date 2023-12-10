@@ -4,29 +4,11 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Projects from './Projects';
 import Skills from './Skills';
-import Header from './Header';
 import Contact from './Contact';
 import NoPage from './NoPage';
-import Footer from './Footer';
-import { Routes, Route } from 'react-router-dom';
 
 const Navigation = () => {
   const [selectedComponent, setSelectedComponent] = useState(null);
-
-  const handleComponentRender = (componentName) => {
-    switch (componentName) {
-      case 'Home':
-        return;
-      case 'Projects':
-        return <Projects />;
-      case 'Skills':
-        return <Skills />;
-      case 'Contact':
-        return <Contact />;
-      default:
-        return <NoPage />;
-    }
-  };
 
   return (
     <>

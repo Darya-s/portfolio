@@ -1,6 +1,5 @@
 import linkedin from './assets/images/linkedin.png';
 import email from './assets/images/gmail-logo.png';
-import phone from './assets/icons/telephone-symbol-button.png';
 import viber from './assets/images/viber.png';
 const Home = () => {
   return (

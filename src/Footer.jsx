@@ -1,6 +1,5 @@
 import linkedin from './assets/icons/linkedin.png';
 import email from './assets/icons/gmail-logo.png';
-import phone from './assets/icons/telephone-symbol-button.png';
 import viber from './assets/icons/viber.png';
 const Footer = () => {
   return (
