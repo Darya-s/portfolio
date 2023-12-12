@@ -20,9 +20,9 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='h-screen h-[80vh] sm:h-[50vh] bg-gradient-to-r from-main via-secondary to-third flex flex-col sm:flex-row justify-evenly items-center text-center mt-6'>
+    <div className='h-screen sm:h-[50vh] bg-gradient-to-r from-main via-secondary to-third flex flex-col sm:flex-row justify-evenly items-center text-center mt-6'>
       <div
-        className={`text-text  w-full sm:w-[50%] sm:text-left transition-transform ease-in-out duration-1000 transform ${
+        className={`text-text pt-20 w-full sm:w-[50%] sm:text-left transition-transform ease-in-out duration-1000 transform ${
           isVisible ? 'translate-x-0' : '-translate-x-full'
         }`}>
         <div className='flex flex-col sm:flex-row gap-5 items-center'>

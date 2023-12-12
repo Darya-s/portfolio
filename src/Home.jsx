@@ -17,7 +17,7 @@ const Projects = () => {
 
       <div className='  bg-text shadow-top-right text-main flex justify-center items-center -mt-1'>
         <div className=' grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-0 justify-around px-8 py-44'>
-          <div className='justify-center items-center text-center m-auto grid gap-8 w-[75%] h-[100%] border-transparent hover:border-2 hover:border-main rounded-md p-4  transition duration-300 ease-in-out'>
+          <div className='justify-center items-center text-center m-auto grid gap-8 w-[100%] sm:w-[75%] h-[100%] border-transparent hover:border-2 hover:border-main rounded-md p-4  transition duration-300 ease-in-out'>
             <div className='grid gap-4'>
               <h2 className='font-bold uppercase text-xl'> Meal sharing</h2>
               <p>
@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className='justify-center items-center text-center m-auto grid gap-8 w-[75%] h-[100%] border-transparent hover:border-2 hover:border-main rounded-md p-4  transition duration-300 ease-in-out'>
+          <div className='justify-center items-center text-center m-auto grid gap-8 w-[100%] sm:w-[75%]h-[100%] border-transparent hover:border-2 hover:border-main rounded-md p-4  transition duration-300 ease-in-out'>
             <div className='grid gap-4'>
               <h2 className='font-bold uppercase text-xl'>
                 Project management
@@ -79,7 +79,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className='justify-center items-center text-center m-auto grid gap-8 w-[75%] h-[100%] border-transparent hover:border-2 hover:border-main rounded-md p-4  transition duration-300 ease-in-out'>
+          <div className='justify-center items-center text-center m-auto grid gap-8 w-[100%] sm:w-[75%] h-[100%] border-transparent hover:border-2 hover:border-main rounded-md p-4  transition duration-300 ease-in-out'>
             <div className='grid gap-4'>
               <h2 className='font-bold uppercase text-xl'>Weather app</h2>
 

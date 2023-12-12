@@ -7,7 +7,7 @@ const NoPage = () => {
         </div>
       </div>
 
-      <div className=' grid justify-center gap-10 mx-auto py-28 text-main font-bold'>
+      <div className=' grid justify-center  mx-auto py-44 text-main font-bold'>
         <h2 className='font-bold text-2xl'>No page found</h2>
       </div>
     </div>
