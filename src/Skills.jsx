@@ -13,86 +13,68 @@ import tailwind from './assets/icons/tailwind.png';
 
 const Skills = () => {
   return (
-    <div id='Skills' className='w-full rounded-lg shadow-md '>
+    <div
+      id='Skills'
+      className='w-full rounded-lg shadow-md bg-gradient-to-r from-main via-secondary to-third '>
       <div className='grid text-text justify-center items-center  bg-gradient-to-r from-main via-secondary to-third'>
         <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>
-          <h2 className='text-4xl font-bold text-main px-4'>My Skills</h2>
+          <h2 className='text-4xl font-bold text-main px-4 py-2'>My skills</h2>
         </div>
       </div>
-      <div className=' bg-text justify-center items-center'>
-        <div className='flex shadow-top-right justify-center items-center py-28'>
-          <div className='grid grid-cols-3 gap-6  mx-2 justify-center items-center text-main sm:gap-10'>
-            <div className='grid grid-cols-2'>
+
+      <div className='  bg-text shadow-top-right text-main flex justify-center items-center max-h-fit -mt-1'>
+        <div className=' grid justify-items-center gap-10 mx-auto py-44'>
+          <div
+            className='grid grid-cols-3 gap-6  mx-4 justify-center items-center font-bold text-main text-xs sm:gap-10 sm:text-2xl
+          '>
+            <div className='flex'>
               <img className='w-12 sm:w-32 ' alt='vscode' src={vscode} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Visual Code
-              </h3>
+              <h3 className=' my-auto ml-6  '>Visual</h3>
             </div>
-            <div className='grid grid-cols-2'>
+            <div className='flex'>
               <img className='w-12 sm:w-32' alt='github' src={github} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Github
-              </h3>
+              <h3 className=' my-auto ml-6'>Github</h3>
             </div>
-            <div className='grid grid-cols-2'>
+            <div className='flex'>
               <img className='w-12 sm:w-32' alt='docker' src={docker} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Docker
-              </h3>
+              <h3 className=' my-auto ml-6 '>Docker</h3>
             </div>
-            <div className='grid grid-cols-2'>
-              <img className='w-12 sm:w-32' alt='figma' src={figma} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Figma
-              </h3>
-            </div>
-            <div className='grid grid-cols-2'>
-              <img className='w-12 sm:w-32' alt='react' src={react} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                React.js
-              </h3>
-            </div>
-            <div className='grid grid-cols-2'>
-              <img className='w-12 sm:w-32' alt='node' src={node} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Node.js
-              </h3>
-            </div>
-            <div className='grid grid-cols-2'>
-              <img className='w-12 sm:w-32' alt='typescript' src={typescript} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Type Script
-              </h3>
-            </div>
-            <div className='grid grid-cols-2'>
-              <img className='w-12 sm:w-32' alt='javascript' src={js} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Java Script
-              </h3>
-            </div>
-            <div className='grid grid-cols-2'>
+            <div className='flex'>
               <img className='w-12 sm:w-32' alt='html' src={html} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                HTML
-              </h3>
+              <h3 className='my-auto ml-6 '>HTML</h3>
             </div>
-            <div className='grid grid-cols-2'>
+
+            <div className='flex'>
+              <img className='w-12 sm:w-32' alt='react' src={react} />
+              <h3 className=' my-auto ml-6 '>React</h3>
+            </div>
+            <div className='flex'>
+              <img className='w-12 sm:w-32' alt='node' src={node} />
+              <h3 className=' my-auto ml-6 '>Node</h3>
+            </div>
+            <div className='flex'>
+              <img className='w-12 sm:w-32' alt='typescript' src={typescript} />
+              <h3 className=' my-auto ml-6 '>Type Script</h3>
+            </div>
+            <div className='flex'>
+              <img className='w-12 sm:w-32' alt='javascript' src={js} />
+              <h3 className=' my-auto ml-6 '>Java Script</h3>
+            </div>
+            <div className='flex'>
+              <img className='w-12 sm:w-32' alt='figma' src={figma} />
+              <h3 className=' my-auto ml-6 '>Figma</h3>
+            </div>
+            <div className='flex'>
               <img className='w-12 sm:w-32' alt='css' src={css} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                CSS
-              </h3>
+              <h3 className=' my-auto ml-6'>CSS</h3>
             </div>
-            <div className='grid grid-cols-2'>
+            <div className='flex'>
               <img className='w-12 sm:w-32' alt='mui' src={mui} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Material UI
-              </h3>
+              <h3 className=' my-auto ml-6 '>Material UI</h3>
             </div>
-            <div className='grid grid-cols-2'>
+            <div className='flex'>
               <img className='w-12 sm:w-32' alt='tailwind' src={tailwind} />
-              <h3 className='justify-center items-center m-auto font-bold text-sm sm:text-2xl'>
-                Tailwind CSS
-              </h3>
+              <h3 className=' my-auto ml-6 '>Tailwind CSS</h3>
             </div>
           </div>
         </div>

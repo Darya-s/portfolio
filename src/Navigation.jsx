@@ -16,14 +16,14 @@ const Navigation = () => {
   return (
     <>
       <div className='flex'>
-        <nav className='mx-auto text-text fixed top-0 left-0 right-0 z-10 shadow-md justify-left items-left sm:text-center '>
-          <ul className='sm:flex sm:justify-center sm:items-center gap-6 text-2xl bg-main'>
+        <nav className='sm:mx-auto text-text fixed top-0 left-0 right-0 z-10 shadow-md justify-left items-left sm:text-center '>
+          <ul className='pl-2 sm:h-12 sm:flex sm:justify-center sm:items-center gap-6 text-2xl bg-main'>
             <li>
               <Link
                 to='/portfolio'
                 className={`transition-transform transform hover:text-fourth ${
                   selectedComponent === 'Home'
-                    ? ' bg-text text-main px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                    ? ' bg-text text-main pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
                 onClick={() => handleLinkClick('Home')}>
@@ -32,14 +32,14 @@ const Navigation = () => {
             </li>
             <li>
               <Link
-                to='/projects'
+                to='/certificates'
                 className={`transition-transform transform hover:text-fourth ${
-                  selectedComponent === 'Projects'
-                    ? ' bg-text px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                  selectedComponent === 'Certificates'
+                    ? ' bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
-                onClick={() => handleLinkClick('Projects')}>
-                Projects
+                onClick={() => handleLinkClick('Certificates')}>
+                Certificates
               </Link>
             </li>
             <li>
@@ -47,7 +47,7 @@ const Navigation = () => {
                 to='/skills'
                 className={`transition-transform transform hover:text-fourth ${
                   selectedComponent === 'Skills'
-                    ? ' bg-text px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                    ? ' bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
                 onClick={() => handleLinkClick('Skills')}>
@@ -59,7 +59,7 @@ const Navigation = () => {
                 to='/contact'
                 className={`transition-transform transform hover:text-fourth ${
                   selectedComponent === 'Contact'
-                    ? ' bg-text px-4 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                    ? ' bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
                     : ''
                 }`}
                 onClick={() => handleLinkClick('Contact')}>
