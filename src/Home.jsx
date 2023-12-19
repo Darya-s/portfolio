@@ -36,13 +36,13 @@ const Projects = () => {
                 <RedirectButton
                   link='https://meal-sharing-4lln.onrender.com'
                   btnText='Demo'
-                  btnClass='w-1/3 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
+                  btnClass='w-1/4 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
                 />
 
                 <RedirectButton
                   link='https://github.com/Darya-s/meal-sharing-app'
                   btnText='Source'
-                  btnClass='w-1/3 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
+                  btnClass='w-1/4 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
                 />
               </div>
             </div>
@@ -68,17 +68,17 @@ const Projects = () => {
                 imageUrl={mock2}
                 className='rounded-2xl w-64 sm:w-96  mx-auto '
               />
-              <div className='flex justify-center gap-4'>
+              <div className='flex justify-center gap-4 mt-4'>
                 <RedirectButton
                   link='https://lothbrok-webservice.onrender.com'
                   btnText='Demo'
-                  btnClass='w-1/3 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
+                  btnClass='w-1/4 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
                 />
 
                 <RedirectButton
                   link='https://github.com/HackYourFuture-CPH/class-25-lothbrok'
                   btnText='Source'
-                  btnClass='w-1/3 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
+                  btnClass='w-1/4 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
                 />
               </div>
             </div>
@@ -98,17 +98,17 @@ const Projects = () => {
                 imageUrl={mock3}
                 className='rounded-2xl w-64 sm:w-96  mx-auto '
               />
-              <div className='flex justify-center gap-4'>
+              <div className='flex justify-center gap-4 mt-4'>
                 <RedirectButton
                   link='https://darya-s.github.io/current-weather-app'
                   btnText='Demo'
-                  btnClass='w-1/3 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
+                  btnClass='w-1/4 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
                 />
 
                 <RedirectButton
                   link='https://github.com/Darya-s/current-weather-app'
                   btnText='Source'
-                  btnClass='w-1/3 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
+                  btnClass='w-1/4 bg-text text-main p-2 rounded-lg hover:text-third hover:bg-hover'
                 />
               </div>
             </div>
