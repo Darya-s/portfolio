@@ -52,7 +52,7 @@ const Header = () => {
       </div>
 
       <img
-        className={`rounded-full mb-8 w-[20%] transition-transform ease-in-out duration-1000 transform ${
+        className={`rounded-full w-[20%] transition-transform ease-in-out duration-1000 transform ${
           isVisible ? 'translate-x-0' : 'translate-x-full'
         }`}
         src={profile}
