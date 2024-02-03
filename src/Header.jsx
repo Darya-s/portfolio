@@ -6,7 +6,7 @@ const Header = () => {
 
   const handleDownload = () => {
     window.open(
-      'https://drive.google.com/file/d/13wnFMAQkLkxV1YTqNGkTyZStfqWut5Dl/view?usp=drive_link',
+      'https://drive.google.com/file/d/1g386SzbCh2lvvGhrdHubaHP1bjkj-xmR/view?usp=sharing',
       '_blank'
     );
   };
