@@ -1,70 +1,63 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
-  const [selectedComponent, setSelectedComponent] = useState(null);
-  const handleLinkClick = (componentName) => {
-    setSelectedComponent(componentName);
-
-    const element = document.getElementById(componentName);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <div className='flex'>
         <nav className='sm:mx-auto text-text fixed top-0 left-0 right-0 z-10 shadow-md justify-left items-left sm:text-center '>
           <ul className='pl-2 sm:h-12 sm:flex sm:justify-center sm:items-center gap-6 text-2xl bg-main'>
             <li>
-              <Link
-                to='/portfolio'
-                className={`transition-transform transform hover:text-fourth ${
-                  selectedComponent === 'Home'
-                    ? ' bg-text text-main pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
-                    : ''
-                }`}
-                onClick={() => handleLinkClick('Home')}>
+              <NavLink
+                to='/'
+                className={({ isActive }) =>
+                  `transition-transform transform hover:text-fourth ${
+                    isActive
+                      ? 'bg-text text-main pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                      : ''
+                  }`
+                }>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to='/certificates'
-                className={`transition-transform transform hover:text-fourth ${
-                  selectedComponent === 'Certificates'
-                    ? ' bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
-                    : ''
-                }`}
-                onClick={() => handleLinkClick('Certificates')}>
+                className={({ isActive }) =>
+                  `transition-transform transform hover:text-fourth ${
+                    isActive
+                      ? 'bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                      : ''
+                  }`
+                }>
                 Certificates
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to='/skills'
-                className={`transition-transform transform hover:text-fourth ${
-                  selectedComponent === 'Skills'
-                    ? ' bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
-                    : ''
-                }`}
-                onClick={() => handleLinkClick('Skills')}>
+                className={({ isActive }) =>
+                  `transition-transform transform hover:text-fourth ${
+                    isActive
+                      ? 'bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                      : ''
+                  }`
+                }>
                 Skills
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to='/contact'
-                className={`transition-transform transform hover:text-fourth ${
-                  selectedComponent === 'Contact'
-                    ? ' bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
-                    : ''
-                }`}
-                onClick={() => handleLinkClick('Contact')}>
+                className={({ isActive }) =>
+                  `transition-transform transform hover:text-fourth ${
+                    isActive
+                      ? 'bg-text pl-4 sm:p-2 rounded-r-lg flex w-3/6 text-main sm:rounded-b-lg sm:w-full'
+                      : ''
+                  }`
+                }>
                 Contact Me
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
