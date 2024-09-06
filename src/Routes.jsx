@@ -8,7 +8,6 @@ import Certificates from './Certificates';
 export const router = (
   <Routes>
     <Route path='/' element={<Home />} />
-    <Route path='/home' element={<Home />} />
     <Route path='certificates' element={<Certificates />} />
     <Route path='skills' element={<Skills />} />
     <Route path='contact' element={<Contact />} />
