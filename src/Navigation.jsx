@@ -1,7 +1,23 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScrollToElement = () => {
+      const hash = location.hash;
+      if (hash) {
+        const element = document.getElementById(hash.replace('#', ''));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    };
+
+    handleScrollToElement();
+  }, [location]);
+
   return (
     <>
       <div className='flex'>
@@ -9,7 +25,7 @@ const Navigation = () => {
           <ul className='pl-2 sm:h-12 sm:flex sm:justify-center sm:items-center gap-6 text-2xl bg-main'>
             <li>
               <NavLink
-                to='/'
+                to='/#home'
                 className={({ isActive }) =>
                   `transition-transform transform hover:text-fourth ${
                     isActive
@@ -22,7 +38,7 @@ const Navigation = () => {
             </li>
             <li>
               <NavLink
-                to='/certificates'
+                to='/certificates#certificates'
                 className={({ isActive }) =>
                   `transition-transform transform hover:text-fourth ${
                     isActive
@@ -35,7 +51,7 @@ const Navigation = () => {
             </li>
             <li>
               <NavLink
-                to='/skills'
+                to='/skills#skills'
                 className={({ isActive }) =>
                   `transition-transform transform hover:text-fourth ${
                     isActive
@@ -48,7 +64,7 @@ const Navigation = () => {
             </li>
             <li>
               <NavLink
-                to='/contact'
+                to='/contact#contact'
                 className={({ isActive }) =>
                   `transition-transform transform hover:text-fourth ${
                     isActive

@@ -6,7 +6,7 @@ import FullSizeImage from './FullSizeImage';
 const Certificates = () => {
   return (
     <div
-      id='Certificates'
+      id='certificates'
       className='w-full rounded-lg shadow-md bg-gradient-to-r from-main via-secondary to-third '>
       <div className='grid text-text justify-center items-center  bg-gradient-to-r from-main via-secondary to-third'>
         <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>

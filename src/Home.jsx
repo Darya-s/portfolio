@@ -4,10 +4,10 @@ import mock3 from './assets/images/mockProject3.png';
 import RedirectButton from './RedirectButton';
 import FullSizeImage from './FullSizeImage';
 
-const Projects = () => {
+const Home = () => {
   return (
     <div
-      id='Home'
+      id='home'
       className='w-full rounded-lg shadow-md bg-gradient-to-r from-main via-secondary to-third '>
       <div className='grid text-text justify-center items-center  bg-gradient-to-r from-main via-secondary to-third'>
         <div className='bg-text rounded-tl-lg rounded-tr-lg shadow-top-right'>
@@ -119,4 +119,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Home;
